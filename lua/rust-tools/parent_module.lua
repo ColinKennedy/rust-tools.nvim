@@ -14,7 +14,7 @@ local function handler(_, result, ctx)
 
   local location = result
 
-  if vim.tbl_islist(result) then
+  if vim.islist(result) then
     location = result[1]
   end
 
